@@ -308,7 +308,7 @@ int main(int argc, char** argv)
           {
             break;
           }
-          if((insideAnswer1 * itemPrice[insideAnswer2]) <= starCoins)
+          if((insideAnswer1 * itemPrice[insideAnswer2]) >= starCoins)
           {
             std::cout << " you have insufficient balance for this purchase " << std::endl;
             goodBalance = false;
