@@ -222,7 +222,10 @@ int main(int argc, char** argv)
               std::cout << " your selection is out of range " << std::endl;
             }
           }while(insideAnswer1 > itemName.size() || insideAnswer1 < 0);
-
+          if(insideAnswer1 == -1)
+          {
+            break;
+          }
           std::cout << " you're about to sell :: " << itemName.at(insideAnswer1) << std::endl;
           std::cout << " how many " << itemName.at(insideAnswer1) << std::endl;
           std::cout << " -----enter '-1' to return to main menu " << std::endl;
@@ -242,6 +245,10 @@ int main(int argc, char** argv)
               std::cout << " you do not have that much " << std::endl;
             }
           }while(allGood != true);
+          if(insideAnswer2 == -1)
+          {
+            break;
+          }
           std::cout << " how many starCoins does your item cost each? " << std::endl;
           std::cout << " -----enter '-1' to return to main menu " << std::endl;
           std::cin >> insideAnswer3;
