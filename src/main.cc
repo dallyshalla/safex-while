@@ -74,7 +74,7 @@ int main(int argc, char** argv)
   bool allGood = false;
   bool goodBalance = true;
 
-  //test
+  /*test
   lineOwner.push_back("inal");
   itemNames.push_back("Model T");
   itemDescriptions.push_back("1 Terabyte SSDisk 16 Gigabit RAM Disk");
@@ -89,14 +89,14 @@ int main(int argc, char** argv)
   itemNames.push_back("new game2");
   itemDescriptions.push_back("Over 9000");
   itemQuantities.push_back(9000);
-  itemPrice.push_back(9001);
-  //test
+  itemPrice.push_back(9001;
+  //test */
 
-  //test
+  /*test
   aliasVector.push_back("inal"); //alias other than current user - aliasVector[0]
   aliasVector.push_back("Francis"); //alias other than current user - aliasVector[1]
   aliasVector.push_back("Jason"); //alias other than current user - aliasVector[2]
-  //test
+  //test */
 
   //username or alias request - this is to be replacable for a private key to an alias
   //add multiple alias support and alias management	
@@ -351,7 +351,7 @@ int main(int argc, char** argv)
       case 6:
         for(long long ii=0; ii<(long)itemPrice.size(); ++ii)
         {
-          if(lineOwner.at(ii) == aliasVector.at(3))
+          if(lineOwner.at(ii) == aliasVector.at(0))
           {
             std::cout << " Index: " << ii <<  " | Name: " << itemNames.at(ii) << " | Quantity: " << itemQuantities.at(ii) << " | Price: " << itemPrice.at(ii) << std::endl;
           }
