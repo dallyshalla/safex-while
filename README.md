@@ -4,11 +4,16 @@ SAFEx aims to be a decentralized exchange (e.g. [safecoin](http://maidsafe.net/s
 
 This software will run on the [SAFE Network](http://maidsafe.net/SystemDocs/) in order to ensure [Privacy, Security and Freedom](http://maidsafe.net/company-privacy-security-freedom).
 
+
+
 Build Instructions:
 
 git clone https://github.com/dallyshalla/safex
+
 cd safex
+
 make
+
 ./safex
 
 
