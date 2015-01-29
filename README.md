@@ -1,4 +1,4 @@
-# SAFEx
+# Safe Exchange
 
 This code assembles the basis for a decentralized exchange mechanism, where clients could transmit their desired transaction and have them fulfilled through the private key signing of transactions; those private keys owned by the person in charge. The first transmission to exist will intentionally be (e.g. [safecoin](http://maidsafe.net/safecoin)/[bitcoin](https://bitcoin.org/en/)).
 
