@@ -351,7 +351,7 @@ int main(int argc, char** argv)
       case 6:
         for(long long ii=0; ii<(long)itemPrice.size(); ++ii)
         {
-          if(lineOwner.at(ii) == aliasVector.at(0))
+          if(lineOwner.at(ii) == aliasVector.at(3))
           {
             std::cout << " Index: " << ii <<  " | Name: " << itemNames.at(ii) << " | Quantity: " << itemQuantities.at(ii) << " | Price: " << itemPrice.at(ii) << std::endl;
           }
