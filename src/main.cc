@@ -74,7 +74,7 @@ int main(int argc, char** argv)
   bool allGood = false;
   bool goodBalance = true;
 
-  //test
+  /*test
   lineOwner.push_back("inal");
   itemNames.push_back("Model T");
   itemDescriptions.push_back("1 Terabyte SSDisk 16 Gigabit RAM Disk");
@@ -89,14 +89,14 @@ int main(int argc, char** argv)
   itemNames.push_back("new game2");
   itemDescriptions.push_back("Over 9000");
   itemQuantities.push_back(9000);
-  itemPrice.push_back(9001);
-  //test
+  itemPrice.push_back(9001;
+  //test */
 
-  //test
+  /*test
   aliasVector.push_back("inal"); //alias other than current user - aliasVector[0]
   aliasVector.push_back("Francis"); //alias other than current user - aliasVector[1]
   aliasVector.push_back("Jason"); //alias other than current user - aliasVector[2]
-  //test
+  //test */
 
   //username or alias request - this is to be replacable for a private key to an alias
   //add multiple alias support and alias management	
@@ -222,7 +222,10 @@ int main(int argc, char** argv)
               std::cout << " your selection is out of range " << std::endl;
             }
           }while(insideAnswer1 > itemName.size() || insideAnswer1 < 0);
-
+          if(insideAnswer1 == -1)
+          {
+            break;
+          }
           std::cout << " you're about to sell :: " << itemName.at(insideAnswer1) << std::endl;
           std::cout << " how many " << itemName.at(insideAnswer1) << std::endl;
           std::cout << " -----enter '-1' to return to main menu " << std::endl;
@@ -242,6 +245,10 @@ int main(int argc, char** argv)
               std::cout << " you do not have that much " << std::endl;
             }
           }while(allGood != true);
+          if(insideAnswer2 == -1)
+          {
+            break;
+          }
           std::cout << " how many starCoins does your item cost each? " << std::endl;
           std::cout << " -----enter '-1' to return to main menu " << std::endl;
           std::cin >> insideAnswer3;
